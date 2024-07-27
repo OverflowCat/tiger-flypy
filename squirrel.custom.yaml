@@ -37,6 +37,7 @@ patch:
     mac_light:
       name: Mac浅色
       horizontal: true             # true横排，false竖排
+      candidate_format: "%c\u2005%@\u2005"          # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间。
       # candidate_format: "%c %@ "   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
       corner_radius: 5                             # 窗口圆角
       hilited_corner_radius: 5                     # 高亮圆角
@@ -317,10 +318,10 @@ patch:
     # begin tiger
     #capture_type: none
     #color_font: true
-    comment_font_face: "Consolas, Apple Color Emoji, TumanPUA, LXGW WenKai GB Screen, SimSun, SimSun-ExtB, SimSun-ExtG, TH-Tshyn-P0, TH-Tshyn-P1, TH-Tshyn-P2, TH-Tshyn-P16"
+    comment_font_face: "Apple Color Emoji, Noto Sans CJK SC, Noto Sans Mono CJK SC, Plangothic P1, Plangothic P2, TumanPUA, LXGW WenKai GB Screen, SimSun, SimSun-ExtB, SimSun-ExtG, TH-Tshyn-P0, TH-Tshyn-P1, TH-Tshyn-P2, TH-Tshyn-P16"
     comment_font_point: 20 #滤镜字号
     #display_tray_icon: false
-    font_face: "Consolas, Apple Color Emoji, LXGW WenKai GB Screen, SimSun, SimSun-ExtB, SimSun-ExtG, TH-Tshyn-P0, TH-Tshyn-P1, TH-Tshyn-P2, TH-Tshyn-P16"
+    font_face: "Apple Color Emoji, Noto Sans CJK SC, Noto Sans Mono CJK SC, Plangothic P1, Plangothic P2, LXGW WenKai GB Screen, Consolas, TH-Tshyn-P0, TH-Tshyn-P1, TH-Tshyn-P2, TH-Tshyn-P16"
     font_point: 24 #主字体字号
     #fullscreen: false
     inline_preedit: true #鼠须管开嵌入在QQ上可能会有点问题，这里可改为 true 关闭嵌入模式
@@ -328,11 +329,11 @@ patch:
     label_font_point: 22 #标号字号
     #label_format: "%s."
     layout:
-      # min_width: 85
+      # min_width: 10
     corner_radius: 5
     hilited_corner_radius: 5
     # line_spacing: 8
-    # hilite_spacing: 6
+    hilite_spacing: 1
     # spacing: 12
     # 鼠须管盲打，嵌入首选，删除下面两行的#号，即可生效
     #alpha: 0.0001

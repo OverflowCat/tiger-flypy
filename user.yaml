@@ -1,8 +1,10 @@
 var:
-  last_build_time: 1722083159
+  last_build_time: 1722086909
+  option:
+    full_shape: false
   previously_selected_schema: flypy
   schema_access_time:
     PY_c: 1722083172
-    flypy: 1722083246
+    flypy: 1722086983
     tiger: 1722083164
-    tigress: 1722083207
+    tigress: 1722086919
