@@ -3,8 +3,12 @@
 sync/*
 LOG
 LOCK
+CURRENT
 *.log
+*.ldb
+*.old
 
 build/*
 !build/flypy*
 trash
+01 双拼反查配置（自然码 小鹤 微软）
