@@ -36,8 +36,8 @@ patch:
       text_orientation: horizontal
     mac_light:
       name: Mac浅色
-      horizontal: true             # true横排，false竖排
-      candidate_format: "%c\u2005%@\u2005"          # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间。
+      # horizontal: true             # true横排，false竖排
+      candidate_format: "%c\u2005%@"          # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间。
       # candidate_format: "%c %@ "   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
       corner_radius: 5                             # 窗口圆角
       hilited_corner_radius: 5                     # 高亮圆角
@@ -308,34 +308,38 @@ patch:
       text_color: 0x1D9FFF
 
   style:
-    color_scheme: mac_light
+    color_scheme: so_young_qmod_01
     # color_scheme_dark: mac_dark
     # begin flypy
-    line_spacing: 12
+    line_spacing: 8
     display_tray_icon: false
     # end flypy
 
     # begin tiger
     #capture_type: none
     #color_font: true
-    comment_font_face: "Apple Color Emoji, Noto Sans CJK SC, Noto Sans Mono CJK SC, Plangothic P1, Plangothic P2, TumanPUA, LXGW WenKai GB Screen, SimSun, SimSun-ExtB, SimSun-ExtG, TH-Tshyn-P0, TH-Tshyn-P1, TH-Tshyn-P2, TH-Tshyn-P16"
+    comment_font_face: "Noto Sans CJK SC, Noto Sans Mono CJK SC, Plangothic P1, Plangothic P2, TumanPUA, LXGW WenKai GB Screen, SimSun, SimSun-ExtB, SimSun-ExtG, TH-Tshyn-P0, TH-Tshyn-P1, TH-Tshyn-P2, TH-Tshyn-P16"
+    # DO NOT USE Apple Color Emoji!!!
     comment_font_point: 20 #滤镜字号
     #display_tray_icon: false
-    font_face: "Apple Color Emoji, Noto Sans CJK SC, Noto Sans Mono CJK SC, Plangothic P1, Plangothic P2, LXGW WenKai GB Screen, Consolas, TH-Tshyn-P0, TH-Tshyn-P1, TH-Tshyn-P2, TH-Tshyn-P16"
-    font_point: 24 #主字体字号
+    font_face: "Noto Sans CJK SC, Noto Sans Mono CJK SC, Plangothic P1, Plangothic P2, LXGW WenKai GB Screen, Consolas, TH-Tshyn-P0, TH-Tshyn-P1, TH-Tshyn-P2, TH-Tshyn-P16"
+    font_point: 26 #主字体字号
     #fullscreen: false
     inline_preedit: true #鼠须管开嵌入在QQ上可能会有点问题，这里可改为 true 关闭嵌入模式
     label_font_face: "LXGW WenKai GB Screen, SimSun, SimSun-ExtB, SimSun-ExtG, TH-Tshyn-P0, TH-Tshyn-P1, TH-Tshyn-P2, TH-Tshyn-P16"
     label_font_point: 22 #标号字号
-    #label_format: "%s."
+    label_format: "%s"
     layout:
+      candidate_spacing: 2
+      hilite_padding: 2
+      hilite_spacing: 4
+      margin_x: 0
+      margin_y: 0
       # min_width: 10
     corner_radius: 5
     hilited_corner_radius: 5
-    # line_spacing: 8
-    hilite_spacing: 1
-    # spacing: 12
+    spacing: 1
     # 鼠须管盲打，嵌入首选，删除下面两行的#号，即可生效
-    #alpha: 0.0001
-    #inline_candidate: true
+    # alpha: 0.0001
+    # inline_candidate: true
     # end tiger
